@@ -7,9 +7,9 @@ class Circle {
   int cBlue;
 
   Circle() {
-    xPos = random(400);
-    yPos = random(400);
-    cWidth = random(200);
+    xPos = random(25, 375);
+    yPos = random(25, 375);
+    cWidth = random(10, 50);
     cRed = (int)random(255);
     cGreen = (int)random(255);
     cBlue = (int)random(255);
@@ -17,6 +17,7 @@ class Circle {
 
   void paint() {
     fill(cRed, cGreen, cBlue);
+    noStroke();
     ellipse(xPos, yPos, cWidth, cWidth);
   }
 }
