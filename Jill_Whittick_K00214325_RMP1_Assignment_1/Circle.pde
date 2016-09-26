@@ -20,4 +20,21 @@ class Circle {
     noStroke();
     ellipse(xPos, yPos, cWidth, cWidth);
   }
+    
+  void moveUp() {
+    yPos--;
+  }
+  
+  void moveDown() {
+    yPos++;
+  }
+  
+  void moveLeft() {
+    xPos--;
+  }
+  
+  void moveRight() {
+    xPos++;
+  }    
+
 }
