@@ -1,4 +1,5 @@
-Circle[] circles;  
+Circle[] circles;
+Face face;
 
 void setup() {
   size(400, 400);
@@ -8,9 +9,10 @@ void setup() {
   
   for (int i=0; i<20; i++) {
     circles[i] = new Circle();
+    face = new Face();
   }
 
-}
+} //End of setup()
 
 void draw() {
   background(0);
@@ -19,7 +21,9 @@ void draw() {
     circles[j].display();
   }
   
-}
+  face.display();
+  
+} //End of draw()
 
 void keyPressed() { 
   if(key == CODED) {
@@ -45,4 +49,4 @@ void keyPressed() {
 
     }
   } 
-} // End of keyPressed()
+} //End of keyPressed()
