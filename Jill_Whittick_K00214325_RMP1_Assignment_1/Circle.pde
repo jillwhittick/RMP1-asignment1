@@ -15,7 +15,7 @@ class Circle {
     cBlue = (int)random(255);
   }
 
-  void paint() {
+  void display() {
     fill(cRed, cGreen, cBlue);
     noStroke();
     ellipse(xPos, yPos, cWidth, cWidth);
