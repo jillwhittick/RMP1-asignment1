@@ -61,7 +61,8 @@ void draw() {
   } // end of for loop
   
   // draw Face object onto canvas
-  face.display();
+  // face object will move to to follow mouse
+  face.display(mouseX, mouseY);
   
 } // end of draw()
 

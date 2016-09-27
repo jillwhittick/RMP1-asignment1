@@ -6,14 +6,14 @@ class Face {
     
     // set xPos & yPos to specify coordinate system
     // center of canvas
-    display(200, 200);
+    display(width/2, height/2);
     
   } // end of display()
   
   
   // start of display(x, y) function
   void display(int xPos, int yPos) {
-    
+        
     // save the current coordiante system
     pushMatrix();
     
