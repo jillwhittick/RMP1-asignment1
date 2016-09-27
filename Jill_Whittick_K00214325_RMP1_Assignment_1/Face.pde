@@ -1,86 +1,111 @@
+// start of Face class
 class Face {
 
+  // start of display() function
   void display() {
+    
+    // set xPos & yPos to specify coordinate system
+    // center of canvas
     display(200, 200);
-  } //End of display()
+    
+  } // end of display()
   
+  
+  // start of display(x, y) function
   void display(int xPos, int yPos) {
+    
     // save the current coordiante system
     pushMatrix();
     
-    // Next I move (translate) the coordinate system by the specified 
-    // xPos and yPos.
+    // move the coordinate system by the specified xPos and yPos.
     translate(xPos, yPos);
   
-    // face
+    // set colour of face
     fill(255,230,230);
+    // draw ellipse for face
     ellipse(0, 0, 150, 150);
     
-    //ears
+    // draw 2 ellipses for ears
     ellipse(75, 0, 25, 25);
     ellipse(-75, 0, 25, 25);
     
-    //chin
-    fill(255, 230, 230);
+    // draw ellipse of chin
     ellipse(0, 65, 45, 25);
     
-    //nose
+    // set colour for nose
     fill(255, 204, 204);
+    // draw ellipse for nose
     ellipse(0, 35, 15, 10);
+
+    // set color for mouth
+    fill(255, 153, 153);
+    // draw arc for mouth
+    arc(0, 50, 15, 20, 0, PI);
     
-    // hat
-    // outer stripe
-    fill(0, 0, 255); //blue
-    arc(0, -5, 150, 200, -PI, 0);
-    
-    // middle stripe
-    fill(255, 255, 0); //yellow
-    arc(0, -5, 100, 200, -PI, 0);    
-    
-    // inner stripe
-    fill(0, 0, 255);
-    arc(0, -5, 50, 200, -PI, 0);    
-    
-    //brim
-    fill(255, 255, 0);
-    arc(0, -5, 150, 25, 0, PI);
-    
-    //button
-    fill(255, 255, 0);
-    ellipse(0, -105, 15, 10);
-    
-    
+    //set colour for cheeks
+    fill(255, 190, 190);
+    // draw 2 ellipses for cheeks
+    ellipse(-25, 35, 20, 20);
+    ellipse(25, 35, 20, 20);
+ 
     //eyes
-    fill(255); //white
+    // set colour (white) for 1st layer of eye
+    fill(255); 
+    // draw 2 ellipses for whites of eyes
     ellipse(-25, 15, 15, 15);
     ellipse(25, 15, 15, 15);
     
-    fill(255); //green
+    // set colour (green) for 2nd layer of eye
     fill(0, 255, 0);
+    // draw 2 ellipses for colour of eyes
     ellipse(-25, 15, 10, 10);
     ellipse(25, 15, 10, 10);   
     
-    fill(0);  //black
+    // set colour (black) for 3rd layer of eye
+    fill(0); 
+    // draw 2 ellipses for center of eyes
     ellipse(-25, 15, 7.5, 7.5);
     ellipse(25, 15, 7.5, 7.5);
     
-    // eye sparkle
+    // set colour (white) for eye sparkle
     fill(255);
+    // draw 2 ellipses for eye sparkle
     ellipse(-23, 13, 2.5, 2.5);
-    ellipse(27, 13, 2.5, 2.5);
-    
-    //mouth
-    fill(255, 153, 153);
-    arc(0, 50, 15, 20, 0, PI);
-    
-    //cheeks
-    fill(255, 190, 190);
-    ellipse(-25, 35, 20, 20);
-    ellipse(25, 35, 20, 20);
+    ellipse(27, 13, 2.5, 2.5);    
     
     
-    // Restore the old coordinate system
+    // hat
+    // set colour (blue) of outer stripe
+    fill(0, 0, 255);
+    // draw arc for hat shape
+    arc(0, -5, 150, 200, -PI, 0);
+    
+    // set colour (yellow) of middle stripes
+    fill(255, 255, 0);
+    // draw arc for middle stripes
+    arc(0, -5, 100, 200, -PI, 0);    
+    
+
+    // set colour (blue) of inner stripes
+    fill(0, 0, 255);
+    // draw arc for inner stripes
+    arc(0, -5, 50, 200, -PI, 0);    
+    
+    //brim
+    // set colour (yellow) of hat brim
+    fill(255, 255, 0);
+    // draw arc for hat brim
+    arc(0, -5, 150, 25, 0, PI);
+    
+    //button
+    // set colour (yellow) of button
+    fill(255, 255, 0);
+    // draw arc for hat button
+    ellipse(0, -105, 15, 10);
+        
+    // restore the old coordinate system
     popMatrix();
     
-  } //End of display(xPos, yPos)
-}
+  } // end of display(x, y)
+
+} // end of Face class
