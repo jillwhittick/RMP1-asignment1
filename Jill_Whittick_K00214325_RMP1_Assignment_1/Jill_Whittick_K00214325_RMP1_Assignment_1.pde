@@ -1,4 +1,5 @@
 /*  Jill Whittick - K00214325 - Assignment 1
+
     This Processing sketch:
     - Draws one face and 20 random sized, colored and positioned circles on
     the screen. All circles have a width greater then 10 pixels or less then 
@@ -17,6 +18,9 @@ Face face;
 // declare and initialize variable to store the number of circles to be on screen
 int numCircles = 20;
 
+// declare boolean to track if mouse is on the screen
+// face will appear in middle of the screen until mouse moves on canvas
+boolean mouseOn = false;
 
 // start of setup() function
 void setup() {
@@ -62,10 +66,27 @@ void draw() {
   
   // draw Face object onto canvas
   // face object will move to to follow mouse
-  face.display(mouseX, mouseY);
+  //face.display();
+
+  // if statement used to determine if mouse has been on canvas
+  if ((mouseOn == false) && (mouseX == 0)) {
+    
+    // set face position to middle of screen
+    face.display(width/2, height/2);
+    
+  } // end of if
+  
+  // mouse has been on screen
+  else {
+    // set mouseOn boolean to true
+    mouseOn = true;
+
+    // set face position to follow mouse
+    face.display(mouseX, mouseY);
+
+  } // end of else
   
 } // end of draw()
-
 
 // start of keyPressed() function
 void keyPressed() { 
