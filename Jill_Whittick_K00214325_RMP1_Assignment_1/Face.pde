@@ -73,35 +73,138 @@ class Face {
     ellipse(-23, 13, 2.5, 2.5);
     ellipse(27, 13, 2.5, 2.5);    
     
+    // Hat colours will change depending on the quadrant the mouse is located
+    // Mouse located in top left quadrant
+    if ((mouseX <= width/2) && (mouseY <= height/2)){
     
-    // hat
-    // set colour (blue) of outer stripe
-    fill(0, 0, 255);
-    // draw arc for hat shape
-    arc(0, -5, 150, 200, -PI, 0);
+      // hat (Tipperary colours)
+      // set colour (blue) of outer stripe
+      fill(0, 0, 255);
+      // draw arc for hat shape
+      arc(0, -5, 150, 200, -PI, 0);
+      
+      // set colour (yellow) of middle stripes
+      fill(255, 255, 0);
+      // draw arc for middle stripes
+      arc(0, -5, 100, 200, -PI, 0);    
+  
+      // set colour (blue) of inner stripes
+      fill(0, 0, 255);
+      // draw arc for inner stripes
+      arc(0, -5, 50, 200, -PI, 0);    
+      
+      //brim
+      // set colour (yellow) of hat brim
+      fill(255, 255, 0);
+      // draw arc for hat brim
+      arc(0, -5, 150, 25, 0, PI);
+      
+      //button
+      // set colour (yellow) of button
+      fill(255, 255, 0);
+      // draw arc for hat button
+      ellipse(0, -105, 15, 10);
     
-    // set colour (yellow) of middle stripes
-    fill(255, 255, 0);
-    // draw arc for middle stripes
-    arc(0, -5, 100, 200, -PI, 0);    
+    }
     
-
-    // set colour (blue) of inner stripes
-    fill(0, 0, 255);
-    // draw arc for inner stripes
-    arc(0, -5, 50, 200, -PI, 0);    
+    // Mouse located in bottom left quadrant
+    else if ((mouseX <= width/2) && (mouseY > height/2)){
     
-    //brim
-    // set colour (yellow) of hat brim
-    fill(255, 255, 0);
-    // draw arc for hat brim
-    arc(0, -5, 150, 25, 0, PI);
+      // hat (Cork colours)
+      // set colour (red) of outer stripe
+      fill(255, 0, 0);
+      // draw arc for hat shape
+      arc(0, -5, 150, 200, -PI, 0);
+      
+      // set colour (white) of middle stripes
+      fill(255);
+      // draw arc for middle stripes
+      arc(0, -5, 100, 200, -PI, 0);    
+  
+      // set colour (red) of inner stripes
+      fill(255, 0, 0);
+      // draw arc for inner stripes
+      arc(0, -5, 50, 200, -PI, 0);    
+      
+      //brim
+      // set colour (white) of hat brim
+      fill(255);
+      // draw arc for hat brim
+      arc(0, -5, 150, 25, 0, PI);
+      
+      //button
+      // set colour (red) of button
+      fill(255, 0, 0);
+      // draw arc for hat button
+      ellipse(0, -105, 15, 10);
     
-    //button
-    // set colour (yellow) of button
-    fill(255, 255, 0);
-    // draw arc for hat button
-    ellipse(0, -105, 15, 10);
+    }   
+        
+    // Mouse located in top right quadrant
+    else if ((mouseX > width/2) && (mouseY <= height/2 )){
+    
+      // hat (Limerick colours)
+      // set colour (green) of outer stripe
+      fill(0, 255, 0);
+      // draw arc for hat shape
+      arc(0, -5, 150, 200, -PI, 0);
+      
+      // set colour (white) of middle stripes
+      fill(255);
+      // draw arc for middle stripes
+      arc(0, -5, 100, 200, -PI, 0);    
+  
+      // set colour (green) of inner stripes
+      fill(0, 255, 0);
+      // draw arc for inner stripes
+      arc(0, -5, 50, 200, -PI, 0);    
+      
+      //brim
+      // set colour (white) of hat brim
+      fill(255);
+      // draw arc for hat brim
+      arc(0, -5, 150, 25, 0, PI);
+      
+      //button
+      // set colour (green) of button
+      fill(0, 255, 0);
+      // draw arc for hat button
+      ellipse(0, -105, 15, 10);
+    
+    }
+    
+      // Mouse located in bottom right quadrant
+      else if ((mouseX > width/2) && (mouseY > height/2 )){
+    
+      // hat (Kerry colours)
+      // set colour (green) of outer stripe
+      fill(0, 255, 0);
+      // draw arc for hat shape
+      arc(0, -5, 150, 200, -PI, 0);
+      
+      // set colour (yellow) of middle stripes
+      fill(255, 255, 0);
+      // draw arc for middle stripes
+      arc(0, -5, 100, 200, -PI, 0);    
+  
+      // set colour (green) of inner stripes
+      fill(0, 255, 0);
+      // draw arc for inner stripes
+      arc(0, -5, 50, 200, -PI, 0);    
+      
+      //brim
+      // set colour (yellow) of hat brim
+      fill(255, 255, 0);
+      // draw arc for hat brim
+      arc(0, -5, 150, 25, 0, PI);
+      
+      //button
+      // set colour (yellow) of button
+      fill(0, 255, 0);
+      // draw arc for hat button
+      ellipse(0, -105, 15, 10);
+    
+    }
         
     // restore the old coordinate system
     popMatrix();
