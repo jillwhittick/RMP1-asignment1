@@ -25,7 +25,7 @@ void setup() {
   size(400, 400);
   
   // set canvas background colour
-  background(0);
+  background(245);
   
   // create the circles array
   circles = new Circle[numCircles];
@@ -50,7 +50,7 @@ void setup() {
 void draw() {
   
   // set backgrund colour
-  background(0);
+  background(245);
   
   // for loop used to draw circle objects from the circles array
   for (int i=0; i<numCircles; i++) {

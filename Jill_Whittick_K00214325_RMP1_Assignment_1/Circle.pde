@@ -34,7 +34,8 @@ class Circle {
   void display() {
     
     // set fill using the random generated cRed, cGreen & cBlue ints
-    fill(cRed, cGreen, cBlue);
+    // opacity set to 150 so circles that are behind other circles can be seen
+    fill(cRed, cGreen, cBlue, 150);
     
     // remove stroke from circles
     noStroke();
