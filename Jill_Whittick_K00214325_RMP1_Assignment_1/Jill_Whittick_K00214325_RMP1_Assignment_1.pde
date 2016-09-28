@@ -26,7 +26,7 @@ boolean mouseOn = false;
 void setup() {
   
   // declare size of canvas
-  size(400, 400);
+  size(450, 450);
   
   // set canvas background colour
   background(245);
@@ -69,7 +69,7 @@ void draw() {
   //face.display();
 
   // if statement used to determine if mouse has been on canvas
-  if ((mouseOn == false) && (mouseX == 0)) {
+  if ((mouseOn == false) && (mouseX == 0) && (mouseY == 0)) {
     
     // set face position to middle of screen
     face.display(width/2, height/2);
