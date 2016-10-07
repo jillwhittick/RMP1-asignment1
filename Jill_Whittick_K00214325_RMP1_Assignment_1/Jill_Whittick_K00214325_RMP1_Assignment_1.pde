@@ -19,6 +19,9 @@ Face face;
 // declare and initialize variable to store the number of circles to be on screen
 int numCircles = 20;
 
+//declare and initialize variable for background colour
+int backgroundColor = 245;
+
 // declare boolean to track if mouse is on the screen
 // face will appear in middle of the screen until mouse moves on canvas
 boolean mouseOn = false;
@@ -31,7 +34,7 @@ void setup() {
   size(500, 500);
   
   // set canvas background colour
-  background(245);
+  background(backgroundColor);
   
   // create the circles array
   circles = new Circle[numCircles];
@@ -56,7 +59,7 @@ void setup() {
 void draw() {
   
   // set background colour
-  background(245);
+  background(backgroundColor);
   
   // for loop used to draw circle objects from the circles array
   for (int i=0; i<numCircles; i++) {
