@@ -28,7 +28,7 @@ boolean mouseOn = false;
 void setup() {
   
   // declare size of canvas
-  size(450, 450);
+  size(500, 500);
   
   // set canvas background colour
   background(245);

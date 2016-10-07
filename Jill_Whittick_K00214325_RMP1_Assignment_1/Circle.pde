@@ -14,10 +14,10 @@ class Circle {
   // start of Circle() function
   Circle() {
     
-    // initialize xPos & yPos as random floats, min 25 and max 375 
-    // no circle will be drawn outside the 400x400 canvas
-    xPos = random(25, 375);
-    yPos = random(25, 375);
+    // initialize xPos & yPos as random floats, min 25 and max width minus 25 
+    // no circle will be drawn outside the canvas size
+    xPos = random(25, width-25);
+    yPos = random(25, height-25);
     
     // initalizet cWidth as a random float, min 10 and max 50
     cWidth = random(10, 50);
