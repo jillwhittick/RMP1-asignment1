@@ -19,7 +19,7 @@ class Face {
     
     // move the coordinate system by the specified xPos and yPos.
     translate(xPos, yPos);
-  
+    
     // set colour of face
     fill(255,230,230);
     // draw ellipse for face
@@ -72,7 +72,7 @@ class Face {
     // draw 2 ellipses for eye sparkle
     ellipse(-23, 13, 2.5, 2.5);
     ellipse(27, 13, 2.5, 2.5);    
-    
+       
     // Hat colours will change depending on the quadrant the mouse is located
     // Mouse located in top left quadrant
     if ((mouseX <= width/2) && (mouseY <= height/2)){
@@ -105,7 +105,7 @@ class Face {
       // draw arc for hat button
       ellipse(0, -105, 15, 10);
     
-    }
+    }  // end of else if statement
     
     // Mouse located in bottom left quadrant
     else if ((mouseX <= width/2) && (mouseY > height/2)){
@@ -138,7 +138,7 @@ class Face {
       // draw arc for hat button
       ellipse(0, -105, 15, 10);
     
-    }   
+    } // end of else if statement 
         
     // Mouse located in top right quadrant
     else if ((mouseX > width/2) && (mouseY <= height/2 )){
@@ -171,7 +171,7 @@ class Face {
       // draw arc for hat button
       ellipse(0, -105, 15, 10);
     
-    }
+    }   // end of else if statement
     
       // Mouse located in bottom right quadrant
       else if ((mouseX > width/2) && (mouseY > height/2 )){
@@ -204,7 +204,7 @@ class Face {
       // draw arc for hat button
       ellipse(0, -105, 15, 10);
     
-    }
+    } // end of else if statement
         
     // restore the old coordinate system
     popMatrix();

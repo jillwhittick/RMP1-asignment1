@@ -149,6 +149,6 @@ void keyPressed() {
       
     } // end of RIGHT else/if statement
     
-  } // enf of key if statment
+  } // end of key if statment
   
 } // end of keyPressed()
