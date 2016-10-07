@@ -7,6 +7,7 @@
     - The face is modeled using a class and creates using a object.
     - The 20 circles are stored in an array and are modelled in a Circle class.
     - The face follows the mouse pointer around the screen.
+    - Hat will change colour as it is moved into different quadrants
     - All circles move as a group using the up/down/left/right arrow keys. */
 
 // declare an array of Circle classes
@@ -21,6 +22,7 @@ int numCircles = 20;
 // declare boolean to track if mouse is on the screen
 // face will appear in middle of the screen until mouse moves on canvas
 boolean mouseOn = false;
+
 
 // start of setup() function
 void setup() {
@@ -87,6 +89,7 @@ void draw() {
   } // end of else
   
 } // end of draw()
+
 
 // start of keyPressed() function
 void keyPressed() { 
