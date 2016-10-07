@@ -55,7 +55,7 @@ void setup() {
 // start of draw() function
 void draw() {
   
-  // set backgrund colour
+  // set background colour
   background(245);
   
   // for loop used to draw circle objects from the circles array
